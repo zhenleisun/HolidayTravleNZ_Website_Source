@@ -1,0 +1,52 @@
+CHANGELOG
+---------
+
+Version 1.06
+
+	i) Fixed Text Domain Issue.
+	ii) Fixed issue which broke sites on update.
+	iii) Fixed CUstomizer Sanitization Issues.
+	
+
+Version 1.05
+
+	i) Updated Redux Framework.
+	ii) Removed Redux Framework's Tracking Feature. Disabled Opt ins too. No Tracking, whatsoever.
+
+Version 1.04
+
+	i) Fixed Display of Ads in Top Area
+	ii) Fixed Display of List Widgets
+	iii) Fixed Search Bar Display
+	iv) Imported Fonts Properly by Enquing
+	v) Added a New Option to Display Links to Next/Prev Posts Under each post.
+	vi) Other Minor Changes.
+
+Version 1.03.1
+	
+	i) Removed Protocol while importing Font
+
+Version 1.03 (Not set Live)
+
+	i) Bug Fix. Yanone Kaffeesatz Font was being used, but not Imported. Imported it correctly now.
+	ii) Fixed Bug with Display of HTML5 Gallery.
+
+Version 1.02
+
+	i) Removed top-left.php
+	ii) Removed Tooltipster, Tinynav & Waypoints
+	iii) Separate File for Changelog.
+	iv) Added License Information about Screenshot.
+
+Version 1.01
+
+	i) Fixed Default Widget Titles
+	ii) Fixed AD Area at top.
+	iii) CSS Fixes.
+	iv) Escaped Social URLs
+	v) Fixed Level 3 Submenu Issues.
+	vi) Added Default Thumbnail Sizes for Product.
+
+Version 0.9
+
+	i) Initial Release.
