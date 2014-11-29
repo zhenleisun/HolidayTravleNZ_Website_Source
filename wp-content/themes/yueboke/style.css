@@ -884,7 +884,7 @@ a:hover,a:focus {
 	margin-right:20px;
 	margin-top: 0px;
 	position: relative;
-	overflow:auto;
+	overflow:hidden;
 }
 
 .footer-service .nav li a {
@@ -921,15 +921,14 @@ a:hover,a:focus {
 	margin-right:20px;
 	margin-top: 0px;
 	position: relative;
-	overflow:auto;
+	overflow:hidden;
 }
 
 .footer-nav .nav li a {
 	font-family: 微软雅黑;
-	font-weight: bolder;
-	font-size:10px;
+	font-size:14px;
 	color:#ffffff;
-	padding: 16px 18px;
+	padding: 6px 18px;
 }
 .footer-nav .nav li a:hover {
 	background-color:#576b14;
@@ -3046,9 +3045,10 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 
 .nav-welcome{
 	background:#ccc;
+	font-weight:0;
 	height:25px;
 	color:#0;
-	padding:8px;
+	padding:5px;
 }
 
 .navbar {
