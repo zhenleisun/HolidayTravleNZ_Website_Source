@@ -2103,8 +2103,6 @@ table {
 
 .dropdown-menu.pull-right {
 	right: 0;
-
-	display:block;
 	left: auto
 }
 
@@ -2247,8 +2245,8 @@ table {
 	*zoom: 1;
 	padding: 6px 12px 4px;
 	margin-bottom: 0;
-	font-size: 40px;
-	line-height: 43px;
+	font-size: 12px;
+	line-height: 20px;
 	text-align: center;
 	vertical-align: middle;
 	cursor: pointer;
@@ -2257,7 +2255,7 @@ table {
 }
 
 .btn[type="submit"] {
-	height: 46px;
+	height: 30px;
 }
 
 .btn:hover,.btn:focus {
@@ -2947,26 +2945,27 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 
 .navbar-wrap {
 	position: relative;
-	top: 0px;
+	top: 0;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
 	z-index: 1000
 }
+
 .nav-welcome{
-	color:#000000;
-	margin:0px;
-	padding:0;
-	left:50px;
-	background-color:#ccc;
+	background:#ccc;
+	height:25px;
+	color:#0;
+	padding:8px;
 }
+
 .navbar {
-	top:100px;
 	background: none repeat scroll 0 0 #fff;
-	height: 93px;
+	height: 180px;
 }
 
 .navbar:before,.navbar:after {
+
 	content: "";
 	display: table;
 	line-height: 0;
@@ -2977,16 +2976,16 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 }
 
 .navbar .logo {
-	background: url("img/logo.png") no-repeat scroll 50% 50% rgba(0,0,0,0);
+	background: url("img/logo.png") no-repeat scroll 20% 50% rgba(0,0,0,0);
 	color: #fff;
 	float: left;
 	font-size: 18px;
 	font-weight: bold;
 	height: 93px;
 	line-height: 208px;
-	margin: 0;
+	margin: 10px;
 	overflow: hidden;
-	width: 200px;
+	width: 2000px;
 }
 
 .navbar .logo a {
@@ -2995,16 +2994,21 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 	height: 93px;
 	overflow: hidden;
 }
+
 .navbar .nav {
 	display: block;
 	float: left;
 	font-size: 16px;
-	height: 93px;
+	height: 50px;
 	left: 0;
-	margin: 0 10px 0 0;
-	max-width: 5000px;
+	display:block;
+	margin: 150px 10px 0px 0;
+	max-width: 10000px;
 	position: absolute;
+	background-color:#00cccc;
+	width:2000px;
 }
+
 
 .navbar .nav.pull-right {
 	float: right;
@@ -3013,10 +3017,9 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li {
 	float: left;
-	margin-right: 1px;
-	margin-top: 100px;
+	margin-right: 0px;
+	margin-top: 0px;
 	position: relative;
-	background-color:blue;
 }
 
 .navbar .nav li a {
@@ -3179,9 +3182,8 @@ input.search-input {
 	border: 2px solid #ccc;
 	color: #ccc;
 	float: left;
-	height: 35px;
-	width: 220px;
-	font-size:15px;
+	height: 40px;
+	width: 180px;
 }
 
 input.search-input:hover,input.search-input:focus {

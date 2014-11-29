@@ -67,7 +67,7 @@ echo '<style>'.$style.'</style>';
 		echo '<'.$logoTagName.' class="logo"><a href="'.get_bloginfo('url').'" title="'.get_bloginfo('name').'-'.get_bloginfo('description').'">'.get_bloginfo('name').'</a></'.$logoTagName.'>'."\n";
 		?>
 		<ul class="nav">
-	<?php echo str_replace("</ul></div>", "", ereg_replace("<div[^>]*><ul[^>]*>", "", wp_nav_menu(array('theme_location' => 'nav', 'echo' => false)) )); ?>
+			<?php echo str_replace("</ul></div>", "", ereg_replace("<div[^>]*><ul[^>]*>", "", wp_nav_menu(array('theme_location' => 'nav', 'echo' => false, 'depth'=>0)) )); ?>
 		</ul>
 		<!--注释掉搜索栏
 		<div class="menu pull-right">
@@ -76,7 +76,7 @@ echo '<style>'.$style.'</style>';
 				<ul class="dropdown-menu search-suggest"></ul>
 		-->
 		</form>
-			<!--主是掉订阅栏
+			<!--注释掉订阅栏
 			<div class="btn-group pull-left">
 				<button class="btn btn-primary" data-toggle="modal" data-target="#feed">订阅</button>
 				<?php if( dopt('d_tqq_b') || dopt('d_weibo_b') || dopt('d_facebook_b') || dopt('d_twitter_b') ){ ?>
