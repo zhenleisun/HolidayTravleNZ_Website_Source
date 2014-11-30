@@ -9,9 +9,9 @@
 	</div>
 </div>
 <div id="primary" class="content-area col-md-12" align="center">
-		<div id="home-title" align="left">
+		<!--<div id="home-title" align="left">
 			<span><?php _e('Recent Posts','verge'); ?><span>
-		</div>
+		</div>-->
 		<main id="main" class="site-main" role="main">
 		<?php $count = 0; ?>
 		<?php if ( have_posts() ) : ?>
