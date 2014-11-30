@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <?php if( dopt('d_adindex_01_b') ) printf('<div class="banner banner-navbar">'.dopt('d_adindex_01').'</div>'); ?>
+<div class="hotel-search">
+<a href=".get_bloginfo('url')."> <?php echo get_bloginfo('name') ?></a>
+</div>
 <div class="content-wrap">
 	<div class="content">
 	<?php 

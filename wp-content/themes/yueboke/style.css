@@ -3,7 +3,7 @@
 Theme URI: http://www.weixinzb.com/
 Description: 天和旅行社 <a href="http://www.weixinzb.com/">天和旅行社</a>.
 Author: StarTeam
-Author URI: http://www.weixinzb.com/
+Author URI: http://nz.linkedin.com/pub/alex-sun/97/59b/624/
 Version: 1.0
 */
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
@@ -758,10 +758,26 @@ a:hover,a:focus {
 	top:180px;
 	margin-bottom: 10px;
 	margin-top:10px;
+	
 }
 
+.hotel-search{
+	background: url("img/hotel-search.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+	color: #fff;
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	height: 400px;
+	margin: 10px,0,100px;
+	overflow: hidden;
+	width: 2000px;
+}
+
+.hotel-search a{
+	height: 400px;
+	
+}
 .content-wrap {
-	top:280px
 	width: 100%;
 	float: left;
 	width:2000px;
