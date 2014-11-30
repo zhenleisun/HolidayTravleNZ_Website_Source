@@ -728,15 +728,11 @@ a:hover,a:focus {
 	text-shadow: none
 }
 
-.header,.footer {
-	max-width: 100%;
+.header,.container, .footer {
+	max-width: 2000px;
 	min-width: 350px;
-	margin: 0 auto;
-	text-align: left;
-	position: absolute;
-	*zoom: 1
 }
-
+/*
 .container {
 	max-width: 80%;
 	min-width: 350px;
@@ -749,7 +745,7 @@ a:hover,a:focus {
 	position: relative;
 	*zoom: 1
 }
-
+*/
 .header:before,.container:before,.footer:before,.header:after,.container:after,.footer:after {
 	display: table;
 	content: "";
@@ -768,10 +764,9 @@ a:hover,a:focus {
 }
 
 .container {
-	top:180px;
+	padding-right: 0px;
 	margin-bottom: 10px;
 	margin-top:10px;
-	
 }
 
 .hotel-search{
@@ -781,9 +776,10 @@ a:hover,a:focus {
 	font-size: 18px;
 	font-weight: bold;
 	height: 400px;
-	margin: 10px,0,100px;
+	margin-top:200px;
+	margin-left:0px;
 	overflow: hidden;
-	width: 2000px;
+	width: 100%;
 }
 
 .hotel-search a{
@@ -793,7 +789,7 @@ a:hover,a:focus {
 .content-wrap {
 	width: 100%;
 	float: left;
-	width:2000px;
+	width:100%;
 	
 }
 
@@ -3106,7 +3102,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 	line-height: 208px;
 	margin: 10px;
 	overflow: hidden;
-	width: 2000px;
+	width: 100%;
 }
 
 .navbar .logo a {
@@ -3128,7 +3124,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 	max-width: 3000px;
 	position: absolute;
 	background-color:#1360d2;
-	width:2000px;
+	width:100%;
 }
 
 
@@ -7664,12 +7660,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
