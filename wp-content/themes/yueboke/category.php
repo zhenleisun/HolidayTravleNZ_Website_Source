@@ -17,7 +17,7 @@
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php query_posts('cat='.get_cat_ID( single_cat_title('',false) ) ); while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -25,10 +25,15 @@
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					if($count == 0)
-						echo "<div class='row'>" ;
-					elseif($count%4 == 0)
+						echo "<div class='row'><td>" ;
+					elseif($count%9 == 0)
 						echo "</div><!--.row--><div class='row'>";
-					 
+
+					if($count==0)
+					{
+					get_template_part( 'content', 'firstpost' );
+					}
+				    elseif($count<9)
 					get_template_part( 'content', 'grid4' );
 					
 					$count++;

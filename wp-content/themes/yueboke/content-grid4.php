@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-3 col-sm-3 grid4'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-2 col-sm-2 grid4'); ?>>
 
 		<div class="featured-thumb col-md-12" align="center">
 			<?php if (has_post_thumbnail()) : ?>	
