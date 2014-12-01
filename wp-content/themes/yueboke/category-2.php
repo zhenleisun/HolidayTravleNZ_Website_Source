@@ -1,51 +1,18 @@
 <?php get_header(); ?>
-<?php if( dopt('d_adindex_01_b') ) printf('<div class="banner banner-navbar">'.dopt('d_adindex_01').'</div>'); ?>
-<div class="hotel-search">
-<a href=".get_bloginfo('url')."> <?php echo get_bloginfo('name') ?></a>
-</div>
-
 <div class="content-wrap">
-	<div class="content">
-	<?php 
-		if( dopt('d_adindex_03_b') ) printf('<div class="banner banner-contenttop">'.dopt('d_adindex_03').'</div>');
-		/*不需要最新发布提示
-		if( $paged && $paged > 1 ){
-			printf('<header class="archive-header"><h1>最新发布 第'.$paged.'页</h1><div class="archive-header-info"></div></header>');
-		}else{
-			if( dopt('d_sticky_b') ) include 'modules/sticky.php';
-			printf('<h2 class="title">最新发布</h2>');
-		}
-		*/
-		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-		$args = array(
-		    'caller_get_posts' => 1,
-		    'paged' => $paged
-		);
-		query_posts($args);
-		/*include 'modules/excerpt.php';
-		*/
-		
-	?>
-	</div>
-</div>
-
-<div class="content-wrap">
-	<div class="content">
-		<header class="archive-header">  
-			<h1><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"><?php single_cat_title() ?></a></h1>
+         <?php $home_url = home_url() ;
+		      $backrul =  $home_url.'/wp-content/uploads/2014/12/cate-background-1.png';
+			  $style = " no-repeat fixed center";
+		 ?>
+	<div class="cate-header" >
+	    
+		<header  > 
+			<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"><?php single_cat_title() ?></a></h1>
 			<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
+
 		</header>
 		<!--<?php include( 'modules/excerpt.php' ); ?>-->
 	</div>
-</div>
-
-<div>
-<h1><?php
-    foreach((get_the_category()) as $category)
-	echo $category ->cat-name;
-
-   
-?></h1>
 </div>
 
 <div id="primary" class="content-area col-md-12" align="center">
@@ -65,7 +32,7 @@
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					if($count == 0)
-						echo "<div class='row'><td>" ;
+						echo "<div class='row catetainer'><td>" ;
 					elseif($count%9 == 0)
 						echo "</div><!--.row--><div class='row'>";
 
@@ -75,7 +42,7 @@
 					}
 				    elseif($count<9)
 					get_template_part( 'content', 'grid4' );
-					
+
 					$count++;
 				?>
 			<?php endwhile; ?>
@@ -91,5 +58,4 @@
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer(); ?>

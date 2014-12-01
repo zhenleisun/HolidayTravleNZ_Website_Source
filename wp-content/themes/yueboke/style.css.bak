@@ -4130,7 +4130,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 	
 }
 
-.cate-header header {
+.cate-header head {
     color: #444;
 	font-size:20px;
 	background:#ffffff url('http://localhost/wp/wp-content/uploads/2014/12/cate-background-1.png') no-repeat fixed center;

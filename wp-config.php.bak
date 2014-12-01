@@ -22,7 +22,7 @@ define('DB_NAME', 'wordpress');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'gwpy@359261788');
+define('DB_PASSWORD', '315');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
