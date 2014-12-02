@@ -49,7 +49,7 @@
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat=6'); while ( have_posts() ) : the_post(); ?>
+			<?php query_posts('cat=12'); while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -110,7 +110,7 @@
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat=2'); while ( have_posts() ) : the_post(); ?>
+			<?php query_posts('cat=12'); while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
