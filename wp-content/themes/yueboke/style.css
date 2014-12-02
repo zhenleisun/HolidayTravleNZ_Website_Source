@@ -728,20 +728,24 @@ a:hover,a:focus {
 	text-shadow: none
 }
 
-.header,.footer {
+.header,.container, .footer {
 	max-width: 2000px;
 	min-width: 350px;
 }
-
+/*
 .container {
-	max-width: 100%;
-	min-width: 1350px;
+	max-width: 80%;
+	min-width: 350px;
+	padding-left: 130px;
+	padding-top: 50px;
 	margin: 0 auto;
+	margin-left: 110px;
+	padding-left:100px;
 	text-align: left;
 	position: relative;
 	*zoom: 1
 }
-
+*/
 .header:before,.container:before,.footer:before,.header:after,.container:after,.footer:after {
 	display: table;
 	content: "";
@@ -764,6 +768,7 @@ a:hover,a:focus {
 	margin-bottom: 10px;
 	margin-top:10px;
 }
+
 
 .firstpost{
   width:20%;
@@ -802,6 +807,90 @@ a:hover,a:focus {
 	width:100%;
 	
 }
+
+.category-content {
+		font-color:black;
+		float:left;
+}
+.category-content a{
+	color:black;
+	text-decoration:underline;
+}
+
+.second-category-content-1, .second-category-content-2, .second-category-content-3{
+	margin-top: 200px;
+	margin-left: 40px;
+	width: 400px;
+	height: 600px;
+	border-width: 2px;
+	font-size: 15px;
+	font-color: red;
+	border-style:  solid;
+	position: relative;
+	overflow: auto;
+	float: left;
+}
+
+.second-category-content-1{
+	border-color:pink;
+}
+
+.second-category-content-2{
+	border-color:green;
+}
+
+.second-category-content-3{
+	border-color:red;
+}
+
+.second-category-content-info{
+	font-size:25px;
+	cellpadding:0;
+	height:10px;
+	cellspacing:0;
+	padding:0;
+}
+
+.second-category-content-info .second-category-title{
+	cellpadding:0;
+	height:10px;
+}
+
+
+.second-category-content-info .second-category-more{
+	font-size:15px;
+	cellpadding:0;
+	
+}
+
+ .second-category-content-first{
+	font-size:15px;
+	float:left;
+	width:400px;
+}
+ .second-category-content-first .content-image{
+	align:left;
+	float:left;
+	width:180px;
+}
+ .second-category-content-first .content-excerpt{
+	float:right;
+	margin-left:0;
+	width:180px;
+}
+
+ .content-title-time{
+	width:95%;
+}
+
+.content-title-time tr{
+	font-size:15px;
+}
+
+.pic-insert{
+	background: url("img/hotel-search.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+}
+
 
 .content {
 	/*margin-right: 370px*/
@@ -7782,16 +7871,6 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-
-.catetainer
-{
-  padding-top:5px;
-  padding-left:80px;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
 
 @media (min-width: 768px) {
   .container {
