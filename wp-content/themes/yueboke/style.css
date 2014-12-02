@@ -809,8 +809,9 @@ a:hover,a:focus {
 }
 
 .category-content {
-		font-color:black;
-		float:left;
+	font-color:black;
+	float:left;
+	position:relative;
 }
 .category-content a{
 	color:black;
@@ -827,7 +828,7 @@ a:hover,a:focus {
 	font-color: red;
 	border-style:  solid;
 	position: relative;
-	overflow: auto;
+	overflow: hidden;
 	float: left;
 }
 
@@ -888,9 +889,31 @@ a:hover,a:focus {
 }
 
 .pic-insert{
-	background: url("img/hotel-search.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+	align:center;
+	margin-left:40px;
+	float:left;
+	height:200px;
+	width:2000px;
+	background: url("img/cate-background-2.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
 }
 
+
+.category-content-leftpic .second-category-content-1{
+	width:500px;
+	height:300px;	
+	margin-top:200px;
+	padding:20px;
+	border-width:2px;
+	border-style: solid;
+}
+
+.category-content-leftpic .second-category-content-first{
+	height:300px;
+	width:200px;
+}
+.category-content-leftpic .content-title-time{
+	width:200px;
+}
 
 .content {
 	/*margin-right: 370px*/
