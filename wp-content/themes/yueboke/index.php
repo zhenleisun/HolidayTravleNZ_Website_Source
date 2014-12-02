@@ -30,22 +30,18 @@
 </div>
 
 <div class="content-wrap">
-	<div class="content">
-		<header class="archive-header">  
-			<h1><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"><?php single_cat_title() ?></a></h1>
+         <?php $home_url = home_url() ;
+		      $backrul =  $home_url.'/wp-content/uploads/2014/12/cate-background-1.png';
+			  $style = " no-repeat fixed center";
+		 ?>
+	<div class="cate-header" >
+		<header  > 
+			<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"><?php single_cat_title() ?></a></h1>
 			<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
+
 		</header>
 		<!--<?php include( 'modules/excerpt.php' ); ?>-->
 	</div>
-</div>
-
-<div>
-<h1><?php
-    foreach((get_the_category()) as $category)
-	echo $category ->cat-name;
-
-   
-?></h1>
 </div>
 
 <div id="primary" class="content-area col-md-12" align="center">
@@ -65,7 +61,7 @@
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					if($count == 0)
-						echo "<div class='row'><td>" ;
+						echo "<div class='row catetainer'><td>" ;
 					elseif($count%9 == 0)
 						echo "</div><!--.row--><div class='row'>";
 
@@ -75,7 +71,7 @@
 					}
 				    elseif($count<9)
 					get_template_part( 'content', 'grid4' );
-					
+
 					$count++;
 				?>
 			<?php endwhile; ?>

@@ -779,8 +779,6 @@ a:hover,a:focus {
   float:left;
 }
 
-
-
 .hotel-search{
 	background: url("img/hotel-search.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
 	color: #fff;
@@ -4116,24 +4114,25 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 }
 
 .cate-header {
+    background: url("http://localhost/wp/wp-content/uploads/2014/12/cate-background-1.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
 	font-size: 8px;
 	padding: 5px 20px;
 	margin-bottom: 1px;
-	margin-top:150px;
-	padding-left:108px;
-	
+	margin-top:1px;
+	padding-left:38px;
+	margin-left:105px;
+	height:70px;
     
 }
 .cate-header h1 {
     color: #444;
-	font-size:20px;
-	
+	font-size:20px;	
 }
 
 .cate-header header {
     color: #444;
 	font-size:20px;
-	background:#ffffff url('http://localhost/wp/wp-content/uploads/2014/12/cate-background-1.png') no-repeat fixed center;
+
 }
 
 .catetitlecontainer
@@ -7778,7 +7777,7 @@ pre code {
   width: 25%;
 }
 .col-xs-2 {
-  width: 16.66666667%;
+  width: 19.23666667%;
 }
 .col-xs-1 {
   width: 8.33333333%;
@@ -8099,7 +8098,7 @@ pre code {
     width: 25%;
   }
   .col-md-2 {
-    width: 16.66666667%;
+    width: 19.23666667%;
   }
   .col-md-1 {
     width: 8.33333333%;
