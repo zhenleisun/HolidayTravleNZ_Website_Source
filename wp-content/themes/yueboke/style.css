@@ -4113,8 +4113,27 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 	padding-left:108px;
 }
 
-.cate-header {
-    background: url("http://localhost/wp/wp-content/uploads/2014/12/cate-background-1.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+
+
+
+.cate2-header h1 {
+    color: #444;
+	font-size:20px;	
+}
+
+.catemore
+{
+    margin-right:120px;
+	margin-top:-60px;
+    text-align:right;	
+}
+.catemore h1
+{
+    font-size: 18px;
+}
+
+.cate1-header {
+    background: url("img/cate-background-1.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
 	font-size: 8px;
 	padding: 5px 20px;
 	margin-bottom: 1px;
@@ -4122,9 +4141,39 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 	padding-left:38px;
 	margin-left:105px;
 	height:70px;
-    
 }
-.cate-header h1 {
+
+.cate2-header {
+    background: url("img/cate-background-2.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+	font-size: 8px;
+	padding: 5px 20px;
+	margin-bottom: 1px;
+	margin-top:-15px;
+	padding-left:38px;
+	margin-left:105px;
+	height:153px;
+}
+.cate3-header {
+    background: url("img/cate-background-3.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+	font-size: 8px;
+	padding: 5px 20px;
+	margin-bottom: 1px;
+	margin-top:1px;
+	padding-left:38px;
+	margin-left:105px;
+	height:70px;
+}
+.cate4-header {
+    background: url("img/cate-background-4.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+	padding: 5px 20px;
+	margin-bottom: 1px;
+	margin-top:1px;
+	padding-left:38px;
+	margin-left:105px;
+	height:70px;
+}
+
+.cate1-header h1 {
     color: #444;
 	font-size:20px;	
 }
@@ -4140,6 +4189,37 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
     width:100%;
     height:50px;content
 	padding-top:150px;
+}
+
+.cate4image
+{
+  height: 220px;
+  overflow: hidden;
+  float:left;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+}
+
+
+.cate4cantainer
+{
+    width:100%;
+    height:50px;
+	padding-left:38px;
+	margin-left:105px;
+}
+
+.cate4cantainer-child
+{
+    float:left;
+    width:50%
+	color:#f43;
+	font-size:14px;
+	text-align:center;
+	
 }
 
 .archive-header h1 a {
@@ -6885,6 +6965,8 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
   text-align: center;
   margin: 0 0 10px 0px;
   font-size: 12px;
+  width:125px;
+  height:30px;
 }
 #primary article.grid4 .out-thumb h1.entry-title a {
   color: #cc66cc;

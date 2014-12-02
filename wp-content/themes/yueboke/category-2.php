@@ -4,7 +4,7 @@
 		      $backrul =  $home_url.'/wp-content/uploads/2014/12/cate-background-1.png';
 			  $style = " no-repeat fixed center";
 		 ?>
-	<div class="cate-header" >
+	<div class="cate1-header" >
 		<header  > 
 			<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"><?php single_cat_title() ?></a></h1>
 			<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
