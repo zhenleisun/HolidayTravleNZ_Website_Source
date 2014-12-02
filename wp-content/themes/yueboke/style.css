@@ -4235,6 +4235,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 
 .catemore
 {
+    height:30px;
     margin-right:120px;
 	margin-top:-60px;
     text-align:right;	
@@ -4249,7 +4250,8 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 	font-size: 8px;
 	padding: 5px 20px;
 	margin-bottom: 1px;
-	margin-top:1px;
+	margin-top:581px;
+	padding-top:90px;
 	padding-left:38px;
 	margin-left:105px;
 	height:70px;
@@ -4279,7 +4281,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
     background: url("img/cate-background-4.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
 	padding: 5px 20px;
 	margin-bottom: 1px;
-	margin-top:1px;
+	margin-top:-45px;
 	padding-left:38px;
 	margin-left:105px;
 	height:70px;
@@ -7038,7 +7040,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
   -ms-transition: 0.8s all ease;
   pointer-events: none;
   -webkit-transform: translateY(100%);
-  transform: translateY(100%);featured-thumb
+  transform: translateY(100%);
   background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.6) 75%);
   z-index: 1;
 }
