@@ -7898,7 +7898,8 @@ pre code {
 .catetainer
 {
   padding-top:5px;
-  padding-left:80px;
+  padding-left:90px;
+  padding-right:30px;
 }
 @media (min-width: 768px) {
   .container {
