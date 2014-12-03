@@ -1,60 +1,150 @@
 <?php get_header(); ?>
-<div class="content-wrap">
-         <?php $home_url = home_url() ;
-		      $backrul =  $home_url.'/wp-content/uploads/2014/12/cate-background-1.png';
-			  $style = " no-repeat fixed center";
-		 ?>
-	<div class="cate1-header" >
-		<header  > 
-			<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"><?php single_cat_title() ?></a></h1>
-			<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
-
-		</header>
-		<!--<?php include( 'modules/excerpt.php' ); ?>-->
+<div class='category-content'>
+	<div class="second-category-content-1" align="left">
+	
+			<table width='390px', class='second-category-content-info'>
+				<tr width='390px'>
+					<td width='20px'><hr style="height:20px; width:15px" color=pink /> </td>
+					<!-- 分类标题 -->
+					<td class='second-category-title', font-size='39', width='250px'><a href="<?php query_posts('cat=10' ) ;echo get_category_link( get_cat_ID( single_cat_title('' ,false) ) ); ?>"><?php single_cat_title() ?></a>
+					</td>
+					<!-- 更多 -->
+					<td class='second-category-more', width='100px', align='right'><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('' ,false) ) ); ?>">更多</a></td>
+				</tr>
+			</table>
+			<hr style="filter:alpha(opacity=5,finishopacity=100,style=1);height:3px" color=pink>		
+			
+			<?php $count = 0; ?>
+			<?php if ( have_posts() ) : ?>
+				<?php query_posts('cat=10' ); while ( have_posts() ) : the_post(); ?>
+					<?php
+						if($count==0)
+						{
+							include "second-category-contend.php";
+						}
+					    elseif($count<8){?>
+					    <table class="content-title-time", font-size='35px', height='40px'>
+					    	<tr>
+					    	<td align="left">
+					    		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					    	</td>
+					    	<td align="right">
+					    		<?php 
+					    		echo the_time('Y-m-i').'</br>'; ?>
+					    	</td>
+					    	</tr>
+					    	<DIV style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></DIV>
+					    </table>
+					   <?php }?> 	
+					    	
+						<?php 
+							$count++;
+					
+						endwhile; ?>
+				
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
+	
+	</div>
+	
+		<div class="second-category-content-2" align="left", border-color='green';>
+			<table width='390px', class='second-category-content-info'>
+				<tr width='390px'>
+					<td width='20px'><hr style="height:20px; width:15px" color=green /> </td>
+					<!-- 分类标题 -->
+					<td class='second-category-title', font-size='39', width='250px'><a href="<?php query_posts('cat=11' ) ;echo get_category_link( get_cat_ID( single_cat_title('' ,false) ) ); ?>"><?php single_cat_title() ?></a>
+					</td>
+					<!-- 更多 -->
+					<td class='second-category-more', width='100px', align='right'><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('' ,false) ) ); ?>">更多</a></td>
+				</tr>
+			</table>
+			<hr style="filter:alpha(opacity=5,finishopacity=100,style=1);height:3px" color=green>		
+			
+			<?php $count = 0; ?>
+			<?php if ( have_posts() ) : ?>
+				<?php query_posts('cat=11'); while ( have_posts() ) : the_post(); ?>
+					<?php
+						if($count==0)
+						{
+							include "second-category-contend.php";
+						}
+					    elseif($count<8){?>
+					    <table class="content-title-time", font-size='35px', height='40px'>
+					    	<tr>
+					    	<td align="left">
+					    		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					    	</td>
+					    	<td align="right">
+					    		<?php 
+					    		echo the_time('Y-m-i').'</br>'; ?>
+					    	</td>
+					    	</tr>
+					    	<DIV style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></DIV>
+					    </table>
+					   <?php }?> 	
+					    	
+						<?php 
+							$count++;
+					
+						endwhile; ?>
+				
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
+	
+	</div>
+	
+		<div class="second-category-content-3" align="left">
+	
+			<table width='390px', class='second-category-content-info'>
+				<tr width='390px'>
+					<td width='20px'><hr style="height:20px; width:15px" color=red /> </td>
+					<!-- 分类标题 -->
+					<td class='second-category-title', font-size='39', width='250px'><a href="<?php query_posts('cat=12' );echo get_category_link( get_cat_ID( single_cat_title('' ,false) ) ); ?>"><?php single_cat_title() ?></a>
+					</td>
+					<!-- 更多 -->
+					<td class='second-category-more', width='100px', align='right'><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('' ,false) ) ); ?>">更多</a></td>
+				</tr>
+			</table>
+			<hr style="filter:alpha(opacity=5,finishopacity=100,style=1);height:3px" color=red>		
+			
+			<?php $count = 0; ?>
+			<?php if ( have_posts() ) : ?>
+				<?php query_posts('cat=12'); while ( have_posts() ) : the_post(); ?>
+					<?php
+						if($count==0)
+						{
+							include "second-category-contend.php";
+						}
+					    elseif($count<8){?>
+					    <table class="content-title-time", font-size='35px', height='40px'>
+					    	<tr>
+					    	<td align="left">
+					    		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					    	</td>
+					    	<td align="right">
+					    		<?php 
+					    		echo the_time('Y-m-i').'</br>'; ?>
+					    	</td>
+					    	</tr>
+					    	<DIV style="BORDER-TOP: #00686b 1px dashed; OVERFLOW: hidden; HEIGHT: 1px"></DIV>
+					    </table>
+					   <?php }?> 	
+					    	
+						<?php 
+							$count++;
+					
+						endwhile; ?>
+				
+			<?php else : ?>
+				<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
+	
+	</div>
+	
+	<div class='pic-insert'>
+	
 	</div>
 </div>
-
-<div id="primary" class="content-area col-md-12" align="center">
-		<!--<div id="home-title" align="left">
-			<span><?php _e('Recent Posts','verge'); ?><span>
-		</div>-->
-		<main id="main" class="site-main" role="main">
-		<?php $count = 0; ?>
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat='.get_cat_ID( single_cat_title('',false) ) ); while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					if($count == 0)
-						echo "<div class='row catetainer'><td>" ;
-					elseif($count%9 == 0)
-						echo "</div><!--.row--><div class='row'>";
-
-					if($count==0)
-					{
-					get_template_part( 'content', 'firstpost' );
-					}
-				    elseif($count<9)
-					get_template_part( 'content', 'grid4' );
-
-					$count++;
-				?>
-			<?php endwhile; ?>
-			<?php echo "</div><!--.row-->"; ?>
-			
-			<?php verge_pagination(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 <?php get_footer(); ?>
