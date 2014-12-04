@@ -1,8 +1,35 @@
 <?php get_header(); ?>
 <?php if( dopt('d_adindex_01_b') ) printf('<div class="banner banner-navbar">'.dopt('d_adindex_01').'</div>'); ?>
 <div class="hotel-search">
-<a href=".get_bloginfo('url')."> <?php echo get_bloginfo('name') ?></a>
+
+<div id="SearchBox">&nbsp;</div> 
+ <script 
+src="http://ajaxsearch.partners.agoda.com/partners/SearchBox/Scripts/Ago
+da.SearchBoxV2.1.js" type="text/javascript"></script> 
+ 
+ 
+<script type="text/javascript"> 
+ var AgodaSearch = new AgodaSearchBox({ 
+ cid: 1647799, 
+ filterCityName: 'Auckland', 
+ fixedCityName: false, 
+ fixedCityNameVisible:true, 
+ hotelID: '', 
+ checkInDateBefore:3, 
+ night:2, 
+ language:8, 
+ currencyCode: 'CNY', 
+ newWindow: true, 
+ header: 'header', 
+ footer: 'footer', 
+ style: 'style4', 
+ Element: 'SearchBox' 
+ }); 
+ </script> 
+<!-- Default,CmsLanding,Style1, Style2,Style3,style4, Style6-->
 </div>
+
+
 
 <div class="content-wrap">
 	<div class="content">

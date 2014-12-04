@@ -801,6 +801,24 @@ a:hover,a:focus {
 	height: 400px;
 	
 }
+
+#SearchBox{
+	margin-left:112px;
+	margin-top:67px;	
+	width:379px;
+}
+#AgodaSearchBoxWrapper{
+	width:379px;
+	height:334px;
+	color:black;
+	background-color:#EDF5FB;
+	
+}
+#AgodaSearchBox{
+	width:379px;
+	height:350px;
+}
+
 .content-wrap {
 	width: 100%;
 	float: left;
