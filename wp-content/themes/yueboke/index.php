@@ -122,7 +122,7 @@
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat=6'); while ( have_posts() ) : the_post(); ?>
+			<?php query_posts('cat=5'); while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -157,67 +157,6 @@
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<div class ="cate4-header">
-    <!--<header  > 
-		<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>"></a></h1>
-		<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
-
-	</header>-->
-</div>
-
-<div class="catemore" >
-	<header  > 
-		<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>">更多景点</a></h1>
-		<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
-
-	</header>
-</div>
-
-<div id="primary" class="content-area col-md-12" align="center">
-		<!--<div id="home-title" align="left">
-			<span><?php _e('Recent Posts','verge'); ?><span>
-		</div>-->
-		<main id="main" class="site-main" role="main">
-		<?php $count = 0; ?>
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat=2'); while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					if($count == 0)
-						echo "<div class='row catetainer'><td>" ;
-					elseif($count%9 == 0)
-						echo "</div><!--.row--><div class='row'>";
-
-					if($count==0)
-					{
-					get_template_part( 'content', 'firstpost' );
-					}
-				    elseif($count<9)
-					get_template_part( 'content', 'grid4' );
-
-					$count++;
-				?>
-			<?php endwhile; ?>
-			<?php echo "</div><!--.row-->"; ?>
-			
-			<?php verge_pagination(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	
-	
 	
 	<div class ="cate4-header">
     <!--<header  > 
@@ -239,7 +178,7 @@
 	
 			<?php $count = 0; ?>
 			<?php if ( have_posts() ) : ?>
-				<?php query_posts('cat=3' ); while ( have_posts() ) : the_post(); ?>
+				<?php query_posts('cat=2' ); while ( have_posts() ) : the_post(); ?>
 					<?php
 						if($count==0){?>
 							<div class="index-category4-image" align="left">
@@ -284,7 +223,7 @@
 	
 			<?php $count = 0; ?>
 			<?php if ( have_posts() ) : ?>
-				<?php query_posts('cat=6'); while ( have_posts() ) : the_post(); ?>
+				<?php query_posts('cat=5'); while ( have_posts() ) : the_post(); ?>
 					<?php
 						if($count==0){?>
 							<div class="index-category4-image" align="left">

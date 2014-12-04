@@ -7,7 +7,7 @@
 		<?php endif; ?>
 	</div>
 	<div class="content-excerpt">
-		<?php echo substr(get_the_excerpt(),0,400).(get_the_excerpt() ? "..." : "." ); ?>
+		<?php echo substr(get_the_excerpt(),0,200).(get_the_excerpt() ? "..." : "." ); ?>
 	</div>
 </div>
 			

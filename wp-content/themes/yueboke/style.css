@@ -812,14 +812,22 @@ a:hover,a:focus {
 	font-color:black;
 	float:left;
 	position:relative;
+	overflow:hidden;
 }
 .category-content a{
 	color:black;
 	text-decoration:underline;
 }
 
+.category-content hr{
+	margin-top:1px;
+	margin-bottom:5px;
+	filter:alpha(opacity=5,finishopacity=100,style=1);
+	height:5px;
+}
+
 .second-category-content-1, .second-category-content-2, .second-category-content-3{
-	margin-top: 210px;
+	margin-top: 180px;
 	margin-right:45px;
 	width: 365px;
 	height: 457px;
@@ -917,10 +925,11 @@ a:hover,a:focus {
 
 .pic-insert{
 	float:left;
+	margin-top:50px;
 	margin-left:105px;
 	float:left;
 	height:153px;
-	width:2000px;
+	width:100%;
 	background: url("img/cate-background-2.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
 }
 
@@ -1006,7 +1015,7 @@ a:hover,a:focus {
 
 /*页脚格式*/
 .footer-inner {
-	top:200px;
+	top:50px;
 	color: #ffffff;
 	height:150px;
 	background-color: #414141;
@@ -1054,8 +1063,8 @@ a:hover,a:focus {
 
 .footer-service .nav > li {
 	float: left;
-	margin-left:0px;
-	margin-right:20px;
+	margin-left:30px;
+	margin-right:30px;
 	margin-top: 0px;
 	position: relative;
 	overflow:hidden;
@@ -3316,6 +3325,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 .navbar .nav .active a,.navbar .nav .active a:hover,.navbar .nav .active a:focus {
 	background-color: #404040;
 	color: #ffffff;
+	
 }
 
 .navbar .nav li.current-menu-item a,.navbar .nav li.current-menu-parent a,.navbar .nav li.current_page_item a,.navbar .nav li.current-post-ancestor a {
@@ -3373,9 +3383,9 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 	background-color: #61B3E6;
 }
 
-.navbar .nav li:hover a,.navbar .nav li.current-menu-item a,.navbar .nav li.current-menu-parent a,.navbar .nav li.current_page_item a,.navbar .nav li.current-post-ancestor a,.navbar .nav li ul {
-	background: none repeat scroll 0 0 #fff;
-	color: #61B3E6;
+.navbar .nav li:hover a, .navbar .nav li.current-menu-item a,.navbar .nav li.current-menu-parent a,.navbar .nav li.current_page_item a,.navbar .nav li.current-post-ancestor a,.navbar .nav li ul {
+	background: none repeat scroll 0 0 #fdaa02;
+	color: #ffffff;
 }
 
 .navbar .btn-navbar {
@@ -7963,6 +7973,39 @@ pre code {
   float:left;
 }
 
+.category-content-two-post{
+  margin-top:40px;
+  margin-left:100px;
+  margin-right:50px;
+  width:90%;
+  height:177px;
+  float:left;
+  border-width:2px;
+  border-color: pink;
+  border-style:solid;
+}
+
+.category-content-two-post .second-category-content-info
+{
+  width:97%;
+}
+
+.category-content-two-post .content-image
+{
+  width:220px;
+  padding-left:2px;
+  padding-top:2px;
+  overflow: hidden;
+  float:left;
+}
+.category-content-two-post .content-excerpt
+{
+  width:380px;
+  padding-left:2px;
+  padding-top:2px;
+  overflow: hidden;
+  float:left;
+}
 
 .index-category4-image img {
   margin-top:-20px;
