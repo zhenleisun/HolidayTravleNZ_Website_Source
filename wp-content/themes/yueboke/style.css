@@ -729,7 +729,7 @@ a:hover,a:focus {
 }
 
 .header,.container, .footer {
-	max-width: 2000px;
+	max-width: 2500px;
 	min-width: 350px;
 }
 /*
@@ -785,14 +785,13 @@ a:hover,a:focus {
 }
 
 .hotel-search{
-	background: url("img/hotel-search.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
+	background: url("img/hotel-search.png") no-repeat scroll center rgba(0,0,0,0);
 	color: #fff;
 	float: left;
 	font-size: 18px;
 	font-weight: bold;
 	height: 400px;
 	margin-top:200px;
-	margin-left:0px;
 	overflow: hidden;
 	width: 100%;
 }
@@ -807,10 +806,14 @@ a:hover,a:focus {
 	margin-top:67px;	
 	width:379px;
 }
+
+
 #AgodaSearchBoxWrapper{
 	width:379px;
 	height:334px;
 	color:black;
+	margin-left:65px;
+	margin-top:60px;
 	background-color:#EDF5FB;
 	
 }
@@ -1040,6 +1043,7 @@ a:hover,a:focus {
 	position:relative;
 	clear:both;
 	*zoom: 1;
+	margin-left:0px;
 }
 
 .footer-inner:before,.footer-inner:after，.footer-service:before,.footer-service:after，.footer-nav:before,.footer-nav:after  {
@@ -3241,7 +3245,9 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini {
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	z-index: 1000
+	width:auto;
+	z-index: 1000;
+	margin-left:0px;
 }
 
 .nav-welcome{
@@ -3659,7 +3665,7 @@ input.search-input:hover,input.search-input:focus {
 	margin-top: 50px;
 	clear: both;
 	color: #666;
-	background-color: #F7F7F7;
+	background-color: white;
 	padding: 8px 20px 13px;
 	line-height: 22px;
 	*zoom: 1;
@@ -4302,13 +4308,14 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 
 .cate1-header {
     background: url("img/cate-background-1.png") no-repeat scroll 0% 50% rgba(0,0,0,0);
-	font-size: 8px;
-	padding: 5px 20px;
+	font-size: 18px;
+	padding-left:15px;
+	padding-top: 10px;
+	padding-bottom:20px;
 	margin-bottom: 1px;
 	margin-top:581px;
-	padding-top:90px;
-	padding-left:38px;
-	margin-left:105px;
+	margin-left:6%;
+	margin-right:6%;
 	height:70px;
 }
 
@@ -4328,8 +4335,8 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 	padding: 5px 20px;
 	margin-bottom: 1px;
 	margin-top:1px;
-	padding-left:38px;
-	margin-left:105px;
+	margin-left:6%;
+	margin-right:6%;
 	height:70px;
 }
 .cate4-header {
@@ -4337,8 +4344,8 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 	padding: 5px 20px;
 	margin-bottom: 1px;
 	margin-top:-45px;
-	padding-left:38px;
-	margin-left:105px;
+	margin-left:6%;
+	margin-right:6%;
 	height:70px;
 }
 
@@ -4961,7 +4968,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 }
 
 .page .article-header {
-	padding: 8px 20px
+	padding: 150px 20px 50px 105px;
 }
 
 .breadcrumbs {
@@ -4985,7 +4992,8 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 
 .article-header {
 	margin-bottom: 1px;
-	padding: 2px 20px 12px;
+	padding-top:150px;
+	padding-left:105px;
 	background-color: #fbfbfb;
 }
 
@@ -4995,6 +5003,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 
 .article-content {
 	font-size: 14px;
+	padding-left:105px;
 	line-height: 25px;
 	word-break: break-all;
 	word-wrap: break-word;
@@ -5122,6 +5131,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 
 .article-footer {
 	background-color: #fff;
+	padding-left:105px;
 	border-top: 1px solid #f7f7f7
 }
 
@@ -5221,6 +5231,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 }
 
 .article-nav {
+	padding-left:105px;
 	border-top: 1px solid #f2f2f2;
 	background-color: #FBFBFB;
 	overflow: hidden;
@@ -5231,6 +5242,7 @@ a.label-inverse:hover .label-arrow,a.badge-inverse:hover .label-arrow {
 
 .article-nav span {
 	float: left;
+	padding-left:85px;
 	position: relative
 }
 
@@ -7955,8 +7967,8 @@ pre code {
 .catetainer
 {
   padding-top:5px;
-  padding-left:90px;
-  padding-right:30px;
+  padding-left:5%;
+  padding-right:5%;
 }
 
 .index-category4-left
@@ -8052,12 +8064,12 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1349px;
+    
   }
 }
 .container-fluid {

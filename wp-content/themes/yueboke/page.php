@@ -19,4 +19,5 @@
 		<?php endwhile;  ?>
 	</div>
 </div>
-<?php get_sidebar(); get_footer(); ?>
+<?php get_footer(); ?>
+<!--get_sidebar();-->

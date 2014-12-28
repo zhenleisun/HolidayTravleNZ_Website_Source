@@ -18,11 +18,11 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
  checkInDateBefore:3, 
  night:2, 
  language:8, 
- currencyCode: 'CNY', 
+ currencyCode: 'NZD', 
  newWindow: true, 
  header: 'header', 
  footer: 'footer', 
- style: 'style4', 
+ style: 'style3', 
  Element: 'SearchBox' 
  }); 
  </script> 
@@ -67,7 +67,7 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 
 <div class="catemore" >
 	<header  > 
-		<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>">更多景点</a></h1>
+		<h1 ><a href="<?php echo get_category_link( 7 ); ?>">更多景点</a></h1>
 	</header>
 </div>
 
@@ -80,7 +80,7 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat=2'); while ( have_posts() ) : the_post(); ?>
+			<?php query_posts('cat=7'); while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -115,11 +115,11 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<!--the second cate -->
+<!--the second cate 
 <div class ="cate2-header">
   <h1><a href=""></a></h1>
 </div>
-
+-->
 
  <!--the third cate -->    
 	<div class="cate3-header" >
@@ -133,7 +133,7 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 
 	<div class="catemore" >
 	<header  > 
-		<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>">更多景点</a></h1>
+		<h1 ><a href="<?php echo get_category_link(3); ?>">查看更多</a></h1>
 		<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
 
 	</header>
@@ -149,7 +149,7 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php query_posts('cat=5'); while ( have_posts() ) : the_post(); ?>
+			<?php query_posts('cat=3'); while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					/* Include the Post-Format-specific template for the content.
@@ -195,7 +195,7 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 
     <div class="catemore" >
 	<header  > 
-		<h1 ><a href="<?php echo get_category_link( get_cat_ID( single_cat_title('',false) ) ); ?>">更多景点</a></h1>
+		<h1 ><a href="<?php echo get_category_link(5); ?>">更多攻略</a></h1>
 		<?php if ( category_description() ) echo '<div class="archive-header-info">'.category_description().'</div>'; ?>
 
 	</header>
@@ -250,7 +250,7 @@ da.SearchBoxV2.1.js" type="text/javascript"></script>
 	
 			<?php $count = 0; ?>
 			<?php if ( have_posts() ) : ?>
-				<?php query_posts('cat=5'); while ( have_posts() ) : the_post(); ?>
+				<?php query_posts('cat=4'); while ( have_posts() ) : the_post(); ?>
 					<?php
 						if($count==0){?>
 							<div class="index-category4-image" align="left">
